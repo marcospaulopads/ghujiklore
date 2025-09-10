@@ -1,0 +1,41 @@
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '24184724927880753');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=24184724927880753&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Array com os números de WhatsApp
+    var whatsappNumbers = [
+      '5511950139715', // Número 1
+      '5548910029380', // Número 2
+      '5561910207100', // Número 3
+      '5531976041365', // Número 4
+      '5531920034746', // Número 5
+
+
+     
+    ];
+
+    // Mensagem que será enviada
+    var message = encodeURIComponent("Oii Lorena");
+
+    // Selecionar um número aleatório
+    var randomIndex = Math.floor(Math.random() * whatsappNumbers.length);
+
+    // Redirecionar para o WhatsApp com a mensagem
+    window.location.href = "https://wa.me/" + whatsappNumbers[randomIndex] + "?text=" + message;
+});
+</script>
